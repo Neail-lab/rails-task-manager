@@ -1,0 +1,9 @@
+<h1>EDIT</h1>
+<%= form_with model: @task do |t| %>
+  <%= t.label :title, "Titre ?" %>
+  <%= t.text_field :title %>
+  <%= t.label :details, "Les details de la tache ?" %>
+  <%= t.text_field :details %>
+  <%= t.submit %>
+  <%= t.check_box :attribute_name, as: :boolean, label: "Check" %>
+<% end %>

@@ -1,0 +1,8 @@
+<h1>hello from show</h1>
+<ul>
+  <% @tasks.each do |t| %>
+  <li><%= link_to t.title, task_path(t) %></li>
+  <% end %>
+</ul>
+<%= link_to "Crée une tache", "/tasks/new" %>
+
